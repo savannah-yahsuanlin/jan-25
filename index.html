@@ -2,13 +2,48 @@
 <head>
 	<script src="script.js" defer></script>
 </head>
+<style>
+	form {
+		display: flex;
+		justify-content: center;
+		margin: 20px auto;
+	}
+
+	span {
+		font-size: 28px;
+	}
+
+	li {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	li > button {
+		display: flex;
+		justify-content: center;
+		font-size: 25px;
+		border: none;
+		background-color: transparent;
+		color: red;
+		margin: 10px;
+		text-align: center;
+		align-items: center;
+		align-self: center;
+	}
+</style>
 <body>
 	<form action="">
-		<input type="text">
+		<input>
 		<button>Add Number</button>
 	</form>
 	<ul>
-		<li>42</li>
+		<li>
+			<span>42</span>
+			<button data-action="delete">x</button>
+			<button data-action="add">+</button>
+			<button data-action="minus">-</button>
+		</li>
 	</ul>
 </body>
 </html>
